@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Do You Measure Up Next to the Tallest Basketball Players?</title>
+  <meta name="description" content="Enter your height and see it to scale next to the tallest basketball players in the world, from Victor Wembanyama and Tacko Fall to the all-time record holders.">
+  <link rel="canonical" href="https://doctortaller.com/blogs/science-insight/top-10-tallest-basketball-players-in-the-world">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <h1>How do you measure up next to basketball's tallest players?</h1>
+      <p>Enter your height to see it to scale beside the tallest active pros, the NBA record holders, and the tallest basketball player on record.</p>
+    </header>
+
+    <section class="compare" aria-labelledby="compare-title">
+      <h2 id="compare-title" class="visually-hidden">Height comparison</h2>
+
+      <form class="height-form" id="height-form" novalidate>
+        <fieldset class="units">
+          <legend>Units</legend>
+          <button type="button" class="unit-btn" data-unit="imperial" aria-pressed="true">Feet and inches</button>
+          <button type="button" class="unit-btn" data-unit="metric" aria-pressed="false">Centimeters</button>
+        </fieldset>
+
+        <div class="fields" id="imperial-fields">
+          <label>Feet
+            <input type="number" id="feet" inputmode="numeric" min="3" max="8" value="5">
+          </label>
+          <label>Inches
+            <input type="number" id="inches" inputmode="numeric" min="0" max="11" value="9">
+          </label>
+        </div>
+
+        <div class="fields" id="metric-fields" hidden>
+          <label>Centimeters
+            <input type="number" id="cm" inputmode="numeric" min="92" max="271" value="175">
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Compare my height</button>
+        <p class="form-error" id="form-error" role="alert"></p>
+      </form>
+
+      <p class="result" id="result" aria-live="polite"></p>
+
+      <div class="chart-scroll">
+        <div class="chart" id="chart" role="img" aria-label="Bar chart comparing your height with famous basketball heights">
+          <div class="grid" id="grid" aria-hidden="true"></div>
+          <div class="bars" id="bars"></div>
+        </div>
+      </div>
+      <p class="chart-note">Bars are drawn to scale, starting at 3 feet.</p>
+    </section>
+
+    <section class="ranking" aria-labelledby="ranking-title">
+      <h2 id="ranking-title">The 10 tallest active pros</h2>
+      <p>Every player on the list stands at least 7'3" (2.21 m), and all ten play center. Players with the same height are listed alphabetically by last name.</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Player</th>
+              <th scope="col">Country</th>
+              <th scope="col">Height</th>
+              <th scope="col">Club</th>
+            </tr>
+          </thead>
+          <tbody id="ranking-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="history" aria-labelledby="history-title">
+      <h2 id="history-title">Measured against history</h2>
+      <p>Only one active player, Tacko Fall, makes basketball's all-time top 10 for height. Libya's Suleiman Ali Nashnush is most often cited as the tallest basketball player ever, at about 8'0" (2.45 m), and Soviet center Alexander Sizonenko was measured by Guinness at 7'10" (2.39 m). In the NBA, Manute Bol and Gheorghe Mureșan still share the record at 7'7" (2.31 m).</p>
+      <p>Comparisons across eras are approximate. The NBA has measured players barefoot since the 2019–20 season, so many current listings run about an inch shorter than older figures, which were usually taken in shoes.</p>
+    </section>
+
+    <section class="source">
+      <h2>Read the full ranking</h2>
+      <p>Player profiles, the complete all-time top 10, and why nearly every player this tall ends up at center.</p>
+      <a class="source-link" href="https://doctortaller.com/blogs/science-insight/top-10-tallest-basketball-players-in-the-world">Top 10 Tallest Basketball Players in the World (2026 Update)</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data as of October 2026, from <a href="https://doctortaller.com/blogs/science-insight/top-10-tallest-basketball-players-in-the-world">doctortaller.com</a>. Rosters and contracts can change during the season. Not affiliated with the NBA or any team or league.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
