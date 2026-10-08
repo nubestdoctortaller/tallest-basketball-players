@@ -38,7 +38,7 @@ README.md    This file
 Clone the repository and open `index.html` in any modern browser. No server is needed.
 
 ```bash
-git clone https://github.com/<your-username>/tallest-basketball-players.git
+git clone https://github.com/nubestdoctortaller/tallest-basketball-players.git
 cd tallest-basketball-players
 open index.html
 ```
