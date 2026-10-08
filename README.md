@@ -49,7 +49,7 @@ open index.html
 2. Under **Build and deployment**, choose **Deploy from a branch**.
 3. Select the `main` branch and the `/ (root)` folder, then save.
 
-The page will be available at `https://<your-username>.github.io/tallest-basketball-players/`.
+The page will be available at `https://nubestdoctortaller.github.io/tallest-basketball-players/`.
 
 ## Updating the data
 
